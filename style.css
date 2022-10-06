@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.background-gradiente {
+    height: 100vh;
+    background-color: #010414;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* index2 */
+.background-opacidade {
+    height: 100vh;
+    background: linear-gradient(0.47deg, #070707 0.5%, rgba(80, 80, 80, 0.2) 99.69%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background-chihiro {
+    height: 100vh;
+    background-image: url("https://images5.alphacoders.com/501/501188.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background-forrestgump {
+    height: 100vh;
+    background-image: url("https://br.web.img2.acsta.net/videothumbnails/14/04/28/23/33/522685.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background-oshowdetruman {
+    height: 100vh;
+    background-image: url("https://images6.alphacoders.com/342/342592.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background-starwars {
+    height: 100vh;
+    background-image: url("https://images2.alphacoders.com/652/65230.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*  */
+
+header {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* index2 */
+.aluraflix-logo {
+    width: 7rem;
+    margin-bottom: 4rem;
+}
+
+/*  */
+
+main {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main h1 {
+    color: #E5E5E5;
+    margin-left: 4rem;
+}
+
+main img {
+    height: 19rem;
+    width: 13rem;
+    box-shadow: 0rem 0.25rem 1.8rem rgba(0, 0, 0, 0.5);
+    border-radius: 2.5rem;
+    border: none;
+}
+
+main img:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    transition: transform .30s ease-in-out;
+}
+
+.filmes-capa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* index2 */
+.titulo-estrelas-linha {
+    margin-top: 7rem;
+}
+
+.titulo-estrelas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main .titulo-estrelas h1 {
+    font-weight: 800;
+    font-size: 4rem;
+    text-shadow: 0rem 0.313rem 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.estrelas {
+    height: 5rem;
+    width: 7rem;
+    margin-left: 2rem;
+}
+
+.linha {
+    width: 11.938rem;
+    height: 0rem;
+    border: 0.625rem solid #B9090B;
+    margin-left: 4rem;
+}
+
+main h3 {
+    color: #E5E5E5;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11rem;
+    height: 3rem;
+    background: #B9090B;
+    box-shadow: 0rem 0.313rem 0.25rem rgba(0, 0, 0, 0.5);
+    border-radius: 3rem;
+    border: none;
+    margin-left: 4rem;
+    padding: 1.5rem;
+}
+
+button p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #E5E5E5;
+    margin-left: 1rem;
+}
+
+button:hover, .aluraflix-logo:hover {
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    filter: opacity(0.8);
+}
+
+.seta-butao {
+    height: 3rem;
+    width: 1.5rem;
+}
+
+.estrelas,
+.seta-butao {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.estrelas:hover,
+.seta-butao:hover {
+    cursor: auto;
+    transform: none;
+}
+
+/*  */
+
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E5E5;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+footer img {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 1023px) {
+    header img {
+        width: 10rem;
+    }
+
+    main {
+        height: auto;
+        align-items: center;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    main img {
+        margin-bottom: 1.5rem;
+    }
+
+    main img:hover {
+        transform: none;
+    }
+
+    .filmes-capa {
+        flex-direction: column;
+    }
+
+    /* index 2 */
+    .titulo-estrelas-linha {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo-estrelas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .titulo-estrelas h1 {
+        font-size: 1.7rem;
+    }
+
+    .estrelas, .linha, main h3, button {
+        margin-left: 0;
+    }
+
+    main h3 {
+        margin-top: 2rem;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    button {
+        margin-top: 2rem;
+    }
+
+    button:hover {
+        cursor: auto;
+        transform: none;
+        filter: none;
+    }
+    
+    .seta-butao {
+        margin-top: 1.5rem;
+    }
+
+    /*  */
+}
