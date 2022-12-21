@@ -7,47 +7,44 @@ function voltar() {
     var mudaMain = document.querySelector("main");
     mudaMain.innerHTML = `<h1>Minha lista de favoritos:</h1>
     <div class="filmes-capa">
-        <img src="viagemdechihiroCapa.svg" onclick="mostrafilme1()">
-        <img src="forrestgumpCapa.svg" onclick="mostrafilme2()">
-        <img src="oshowdetrumanCapa.svg" onclick="mostrafilme3()">
-        <img src="starwarsCapa.svg" onclick="mostrafilme4()">
+        <img src="img/viagemdechihiroCapa.svg" onclick="mostrafilme1()">
+        <img src="img/forrestgumpCapa.svg" onclick="mostrafilme2()">
+        <img src="img/oshowdetrumanCapa.svg" onclick="mostrafilme3()">
+        <img src="img/starwarsCapa.svg" onclick="mostrafilme4()">
     </div>`
 }
 
 function mostrafilme1() {
     document.body.classList.add("background-chihiro");
 
-    //cria uma div e coloca um classe
     var opacidade = document.createElement("div");
     opacidade.classList.add("background-opacidade");
 
-    //esvazia o body
     var body = document.querySelector("body");
     body.innerHTML = "";
 
-    // coloca conteúdo dentro da div e coloca a div dentro do body
     opacidade.innerHTML = `<header>
-    <img src="aluraflixLogo.svg" class="aluraflix-logo" onclick="voltar()">
+    <img src="img/aluraflixLogo.svg" class="aluraflix-logo" onclick="voltar()">
 </header>
 
 <main>
     <div class="titulo-estrelas-linha">
         <div class="titulo-estrelas">
             <h1>A viagem de Chihiro</h1>
-            <img src="estrelas.svg" class="estrelas">
+            <img src="img/estrelas.svg" class="estrelas">
         </div>
         <div class="linha"></div>
     </div>
     <h3>Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.</h3>
     <button onclick="voltar()">
-        <img src="seta.svg" class="seta-butao">
+        <img src="img/seta.svg" class="seta-butao">
         <p>Voltar</p>
     </button>
 </main>
 
 <footer>
     <p>feito com </p>
-    <img src="coracaoIcone.svg">
+    <img src="img/coracaoIcone.svg">
     <p>por Luiz</p>
 </footer>`
     body.appendChild(opacidade);
@@ -63,28 +60,28 @@ function mostrafilme2() {
     body.innerHTML = "";
 
     opacidade.innerHTML = `<header>
-    <img src="aluraflixLogo.svg" class="aluraflix-logo" onclick="voltar()">
+    <img src="img/aluraflixLogo.svg" class="aluraflix-logo" onclick="voltar()">
 </header>
 
 <main>
     <div class="titulo-estrelas-linha">
         <div class="titulo-estrelas">
             <h1>Forrest Gump</h1>
-            <img src="estrelas.svg" class="estrelas">
+            <img src="img/estrelas.svg" class="estrelas">
         </div>
         <div class="linha"></div>
     </div>
     <h3>Um homem gentil e simpático presencia os principais eventos das décadas de 1960 e 1970 e, 
     graças a seu otimismo inabalável, inspira todas as pessoas ao seu redor.</h3>
     <button onclick="voltar()">
-        <img src="seta.svg" class="seta-butao">
+        <img src="img/seta.svg" class="seta-butao">
         <p>Voltar</p>
     </button>
 </main>
 
 <footer>
     <p>feito com </p>
-    <img src="coracaoIcone.svg">
+    <img src="img/coracaoIcone.svg">
     <p>por Luiz</p>
 </footer>`
     body.appendChild(opacidade);
@@ -100,14 +97,14 @@ function mostrafilme3() {
     body.innerHTML = "";
 
     opacidade.innerHTML = `<header>
-    <img src="aluraflixLogo.svg" class="aluraflix-logo" onclick="voltar()">
+    <img src="img/aluraflixLogo.svg" class="aluraflix-logo" onclick="voltar()">
 </header>
 
 <main>
     <div class="titulo-estrelas-linha">
         <div class="titulo-estrelas">
             <h1>O show de Truman</h1>
-            <img src="estrelas.svg" class="estrelas">
+            <img src="img/estrelas.svg" class="estrelas">
         </div>
         <div class="linha"></div>
     </div>
@@ -116,14 +113,14 @@ function mostrafilme3() {
     que toda sua vida foi monitorada por câmeras.
     </h3>
     <button onclick="voltar()">
-        <img src="seta.svg" class="seta-butao">
+        <img src="img/seta.svg" class="seta-butao">
         <p>Voltar</p>
     </button>
 </main>
 
 <footer>
     <p>feito com </p>
-    <img src="coracaoIcone.svg">
+    <img src="img/coracaoIcone.svg">
     <p>por Luiz</p>
 </footer>`
     body.appendChild(opacidade);
@@ -139,14 +136,14 @@ function mostrafilme4() {
     body.innerHTML = "";
 
     opacidade.innerHTML = `<header>
-    <img src="aluraflixLogo.svg" class="aluraflix-logo" onclick="voltar()">
+    <img src="img/aluraflixLogo.svg" class="aluraflix-logo" onclick="voltar()">
 </header>
 
 <main>
     <div class="titulo-estrelas-linha">
         <div class="titulo-estrelas">
             <h1>Star Wars: Episódio IV</h1>
-            <img src="estrelas.svg" class="estrelas">
+            <img src="img/estrelas.svg" class="estrelas">
         </div>
         <div class="linha"></div>
     </div>
@@ -154,14 +151,14 @@ function mostrafilme4() {
     intercepta um pedido de socorro da princesa Leia. O evento o lança em uma missão ousada 
     para resgatá-la das garras de Darth Vader e do Império do mal.</h3>
     <button onclick="voltar()">
-        <img src="seta.svg" class="seta-butao">
+        <img src="img/seta.svg" class="seta-butao">
         <p>Voltar</p>
     </button>
 </main>
 
 <footer>
     <p>feito com </p>
-    <img src="coracaoIcone.svg">
+    <img src="img/coracaoIcone.svg">
     <p>por Luiz</p>
 </footer>`
     body.appendChild(opacidade);
